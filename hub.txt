@@ -1,0 +1,5 @@
+hub ExampleHub
+shortLabel Example Hub
+longLabel Simple Example Hub that shows examples of basic data type and orgnization structure
+genomesFile genomes.txt
+email vmalladi@stanford.edu

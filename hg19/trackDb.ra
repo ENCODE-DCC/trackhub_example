@@ -1,0 +1,20 @@
+
+#Example of bigBed track
+track bigBed
+bigDataUrl data/bigBed/example_bed_3.bigBed
+shortLabel Example bigBed
+longLabel Example of a somple bigBed file in bed 3 format
+type bigBed 3
+
+#Example of bigWig track
+track bigWig
+bigDataUrl data/bigWig/sine-1000.bedgraph.bigWig
+shortLabel Example bigWig
+longLabel Example of a sample bigWig file generated from bedGraph
+type bigWig -0.999800 1.333072
+
+#Example of bam track
+
+#Example of vcfTabix track
+
+
