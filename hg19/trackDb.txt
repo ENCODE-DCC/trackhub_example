@@ -14,6 +14,11 @@ longLabel Example of a sample bigWig file generated from bedGraph
 type bigWig -0.999800 1.333072
 
 #Example of bam track
+track bam
+bigDataUrl data/bam/random_alignment.bam
+shortLabel Example bam
+longLabel Example of a bam generated using ArtificialFastqGenerator
+type bam
 
 #Example of vcfTabix track
 
