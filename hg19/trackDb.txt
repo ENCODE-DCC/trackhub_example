@@ -11,7 +11,7 @@ track bigWig
 bigDataUrl data/bigWig/sine-1000.bedgraph.bigWig
 shortLabel Example bigWig
 longLabel Example of a sample bigWig file generated from bedGraph
-type bigWig -0.999800 1.333072
+type bigWig -100 100
 
 #Example of bam track
 track bam
@@ -22,56 +22,3 @@ type bam
 
 #Example of vcfTabix track
 
-#Example Super Track
-
-#Example Composite Track
-
-#Example Aggregate Track
-track aggregate
-container multiWig
-shortLabel Example aggregate
-longLabel Example of an aggregate track
-aggregate transparentOverlay
-showSubtrackColorOnUi on
-type bigWig -1 2
-viewLimits -1:2
-
-    track bigWig1000
-    bigDataUrl data/bigWig/sine-1000.bedgraph.bigWig
-    shortLabel bigWig 1000
-    longLabel bigWig 1000
-    type bigWig -0.999800 1.333072
-    parent aggregate
-    color 86,180,233
-
-    track bigWig10000
-    bigDataUrl data/bigWig/sine-10000.bedgraph.bigWig
-    shortLabel bigWig 10000
-    longLabel bigWig 10000
-    type bigWig -0.999800 1.333072
-    parent aggregate
-    color 0,158,115
-
-    track bigWig100000
-    bigDataUrl data/bigWig/sine-100000.bedgraph.bigWig
-    shortLabel bigWig 100000
-    longLabel bigWig 100000
-    type bigWig -0.999800 1.333072
-    parent aggregate
-    color 204,121,167
-
-    track bigWig2000
-    bigDataUrl data/bigWig/sine-2000.bedgraph.bigWig
-    shortLabel bigWig 2000
-    longLabel bigWig 2000
-    type bigWig -0.999800 1.333072
-    parent aggregate
-    color 153,38,0
-
-    track bigWig20000
-    bigDataUrl data/bigWig/sine-20000.bedgraph.bigWig
-    shortLabel bigWig 20000
-    longLabel bigWig 20000
-    type bigWig -0.999800 1.333072
-    parent aggregate
-    color 230,159,0
