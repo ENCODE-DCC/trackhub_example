@@ -1,7 +1,7 @@
-Simple Track Hub Example
+Basic Track Hub Example
 ========================
 
-Simple examples of supported file types to vizualize data in the UCSC Genome Browser using Track Hubs
+Basic examples of supported file types to vizualize data in the UCSC Genome Browser using Track Hubs
 
 File Types Featured:
 - bigBed: Generated using `pybedtools <http://packages.python.org/pybedtools/>`
@@ -29,6 +29,6 @@ Usage
 
 6. Click "Load Selected Hubs"
 
-7. Track controls for tracks in Hub are located under header "Simple Example Hub"
+7. Track controls for tracks in Hub are located under header "Basic Example Hub"
 
 
