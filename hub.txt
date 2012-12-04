@@ -1,5 +1,5 @@
-hub ExampleHub
-shortLabel Example Hub
-longLabel Simple Example Hub that shows examples of basic data type and orgnization structure
+hub GroupExampleHub
+shortLabel Group Example Hub
+longLabel Group Example Hub that shows examples of basic grouping configurations
 genomesFile genomes.txt
 email vmalladi@stanford.edu
