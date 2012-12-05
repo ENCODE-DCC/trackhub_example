@@ -1,4 +1,29 @@
-#Example Super Track
+#Example Supertrack
+track supertrack
+shortLabel Example Supertrack
+longLabel Example of a Supertrack
+superTrack on 
+
+    track bigBed
+    bigDataUrl data/bigBed/example_bed_3.bigBed
+    shortLabel Example bigBed
+    longLabel Example of a somple bigBed file in bed 3 format
+    type bigBed 3
+    parent supertrack
+
+    track bigWig
+    bigDataUrl data/bigWig/sine-1000.bedgraph.bigWig
+    shortLabel Example bigWig
+    longLabel Example of a sample bigWig file generated from bedGraph
+    type bigWig -100 100
+    parent supertrack
+
+    track bam
+    bigDataUrl data/bam/random_alignment.bam
+    shortLabel Example bam
+    longLabel Example of a bam generated using ArtificialFastqGenerator
+    type bam
+    parent supertrack
 
 #Example Composite Track
 
