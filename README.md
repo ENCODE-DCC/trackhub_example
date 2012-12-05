@@ -4,6 +4,7 @@ Group Track Hub Example
 Basic examples of supported grouping types to vizualize data in the UCSC Genome Browser using Track Hubs
 
 File Types Featured:
+- Supertrack
 - Aggregate Track
 
 All data uses coordinates from Human CRCh37/hg19 and is randomly generated.
