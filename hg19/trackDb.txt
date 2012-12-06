@@ -1,105 +1,35 @@
-#Example Supertrack
-track supertrack
-shortLabel Example Supertrack
-longLabel Example of a Supertrack
-superTrack on 
-
-    track bigBed
-    bigDataUrl data/bigBed/example_bed_3.bigBed
-    shortLabel Example bigBed
-    longLabel Example of a somple bigBed file in bed 3 format
-    type bigBed 3
-    parent supertrack
-
-    track bigWig
-    bigDataUrl data/bigWig/sine-1000.bedgraph.bigWig
-    shortLabel Example bigWig
-    longLabel Example of a sample bigWig file generated from bedGraph
-    type bigWig -100 100
-    parent supertrack
-
-    track bam
-    bigDataUrl data/bam/random_alignment.bam
-    shortLabel Example bam
-    longLabel Example of a bam generated using ArtificialFastqGenerator
-    type bam
-    parent supertrack
-
-#Example Composite Track
-track composite
+#Example Advanced Composite Track with subgroups
+track subgroups
 compositeTrack on
-shortLabel Example Composite
-longLabel Example of a Composite Track
+shortLabel Composite w/ subgroups
+longLabel Example of a Composite Track with subgroups
+subGroup1 variablenumbers Variable_Numbers variable1=Variable_1 variable2=Variable_2
+subGroup2 variableletters Variable_Letters variableA=Variable_A variableB=Variable_B
+dimensions dimX=variablenumbers dimY=variableletters
+sortOrder variablenumbers=+ variableletters=+
 type bigBed 3
 
     track bigBed1
     bigDataUrl data/bigBed/example_1_bed_3.bigBed
-    shortLabel Example bigBed 1
-    longLabel Example 1 of a random bigBed file in bed 3 format
+    shortLabel Var1 and VarA 
+    longLabel Variable 1 and Variable A 
     type bigBed 3
-    parent composite
+    parent subgroups
+    subGroups variablenumbers=variable1 variableletters=variableA
 
     track bigBed2
     bigDataUrl data/bigBed/example_2_bed_3.bigBed
-    shortLabel Example bigBed 2
-    longLabel Example 2 of a random bigBed file in bed 3 format
+    shortLabel Var2 and VarB
+    longLabel Variable 2 and Variable B
     type bigBed 3
-    parent composite
+    parent subgroups
+    subGroups variablenumbers=variable2 variableletters=variableB
 
     track bigBed3
     bigDataUrl data/bigBed/example_3_bed_3.bigBed
-    shortLabel Example bigBed 3
-    longLabel Example 3 of a random bigBed file in bed 3 format
+    shortLabel Var1 and VarB
+    longLabel Variable 1 and Variable B
     type bigBed 3
-    parent composite
+    parent subgroups
+    subGroups variablenumbers=variable1 variableletters=variableB
 
-
-#Example Aggregate Track
-track aggregate
-container multiWig
-shortLabel Example Aggregate
-longLabel Example of an Aggregate Track
-aggregate transparentOverlay
-showSubtrackColorOnUi on
-type bigWig -100 100
-viewLimits -100:100
-
-    track bigWig1000
-    bigDataUrl data/bigWig/sine-1000.bedgraph.bigWig
-    shortLabel bigWig 1000
-    longLabel bigWig generated using sin w/ period 1/(1000 * pi)
-    type bigWig -99.000000 99.000000
-    parent aggregate
-    color 86,180,233
-
-    track bigWig10000
-    bigDataUrl data/bigWig/sine-10000.bedgraph.bigWig
-    shortLabel bigWig 10000
-    longLabel bigWig generated using sin w/ period 1/(10000 * pi)
-    type bigWig -99.000000 99.000000
-    parent aggregate
-    color 0,158,115
-
-    track bigWig100000
-    bigDataUrl data/bigWig/sine-100000.bedgraph.bigWig
-    shortLabel bigWig 100000
-    longLabel bigWig generated using sin w/ 1/(100000 * pi)
-    type bigWig -99.000000 99.000000
-    parent aggregate
-    color 204,121,167
-
-    track bigWig2000
-    bigDataUrl data/bigWig/sine-2000.bedgraph.bigWig
-    shortLabel bigWig 2000
-    longLabel bigWig generated using sin w/ 1/(2000 * pi)
-    type bigWig -99.000000 99.000000
-    parent aggregate
-    color 153,38,0
-
-    track bigWig20000
-    bigDataUrl data/bigWig/sine-20000.bedgraph.bigWig
-    shortLabel bigWig 20000
-    longLabel bigWig generated using sin w/ 1/(20000 * pi)
-    type bigWig -99.000000 99.000000
-    parent aggregate
-    color 230,159,0

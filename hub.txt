@@ -1,5 +1,5 @@
-hub GroupExampleHub
-shortLabel Group Example Hub
-longLabel Group Example Hub that shows examples of basic grouping configurations
+hub CompositeExampleHub
+shortLabel Composite Example Hub
+longLabel Composite Example Hub that shows a composite with views and subgroups
 genomesFile genomes.txt
 email vmalladi@stanford.edu
