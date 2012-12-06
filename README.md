@@ -3,7 +3,7 @@ Group Track Hub Example
 
 Basic examples of supported grouping types to vizualize data in the UCSC Genome Browser using Track Hubs
 
-File Types Featured:
+Grouping Types Featured:
 - Supertrack
 - Composite Track
 - Aggregate Track
