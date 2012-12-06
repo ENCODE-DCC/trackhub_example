@@ -39,7 +39,6 @@ compositeTrack on
 shortLabel Composite w/ Views
 longLabel Example of a Composite Track with Views
 subGroup1 view Views viewbigBed=View_bigBed viewbigWig=View_bigWig
-subGroup2 variableletters Variable_Letters variableA=Variable_A variableB=Variable_B
 sortOrder view=+
 type bigBed 3
 
@@ -48,8 +47,9 @@ type bigBed 3
     shortLabel View bigBed
     longLabel View bigBed
     view viewbigBed
+    parent views
 
-        track bigBed1
+        track viewbigBed1
         bigDataUrl data/bigBed/example_1_bed_3.bigBed
         shortLabel Example bigBed 1
         longLabel Example 1 of a random bigBed file in bed 3 format
@@ -57,7 +57,7 @@ type bigBed 3
         parent viewbigBed
         subGroups view=viewbigBed
 
-        track bigBed2
+        track viewbigBed2
         bigDataUrl data/bigBed/example_2_bed_3.bigBed
         shortLabel Example bigBed 2 
         longLabel Example 2 of a random bigBed file in bed 3 format
@@ -65,7 +65,7 @@ type bigBed 3
         parent viewbigBed
         subGroups view=viewbigBed
 
-        track bigBed3
+        track viewbigBed3
         bigDataUrl data/bigBed/example_3_bed_3.bigBed
         shortLabel Example bigBed 3
         longLabel Example 3 of a random bigBed file in bed 3 format
@@ -80,8 +80,9 @@ type bigBed 3
     longLavel View bigWig
     viewLimits -100:100
     view viewbigWig
+    parent views
 
-        track bigWig1000
+        track viewbigWig1000
         bigDataUrl data/bigWig/sine-1000.bedgraph.bigWig
         shortLabel bigWig 1000
         longLabel bigWig generated using sin w/ period 1/(1000 * pi)
@@ -89,7 +90,7 @@ type bigBed 3
         parent viewbigWig
         subGroups view=viewbigWig
 
-        track bigWig10000
+        track viewbigWig10000
         bigDataUrl data/bigWig/sine-10000.bedgraph.bigWig
         shortLabel bigWig 10000
         longLabel bigWig generated using sin w/ period 1/(10000 * pi)
@@ -97,7 +98,7 @@ type bigBed 3
         parent viewbigWig
         subGroups view=viewbigWig
 
-        track bigWig2000
+        track viewbigWig2000
         bigDataUrl data/bigWig/sine-2000.bedgraph.bigWig
         shortLabel bigWig 2000
         longLabel bigWig generated using sin w/ 1/(2000 * pi)
@@ -105,13 +106,10 @@ type bigBed 3
         parent viewbigWig
         subGroups view=viewbigWig
 
-        track bigWig20000
+        track viewbigWig20000
         bigDataUrl data/bigWig/sine-20000.bedgraph.bigWig
         shortLabel bigWig 20000
         longLabel bigWig generated using sin w/ 1/(20000 * pi)
         type bigWig -99.000000 99.000000
         parent viewbigWig
         subGroups view=viewbigWig
-
-
-
