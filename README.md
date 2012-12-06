@@ -5,6 +5,7 @@ Basic examples of supported grouping types to vizualize data in the UCSC Genome 
 
 File Types Featured:
 - Supertrack
+- Composite Track
 - Aggregate Track
 
 All data uses coordinates from Human CRCh37/hg19 and is randomly generated.
@@ -15,8 +16,8 @@ Usage
 
 1. Clone repository to server accessible to the internet
   
-  git clone https://github.com/ENCODE-DCC/trackhub_example
-  git checkout groups
+- git clone https://github.com/ENCODE-DCC/trackhub_example
+- git checkout -tb groups origin/groups
 
 2. Navigate to `UCSC Genome Browser <http://genome.ucsc.edu/cgi-bin/hgGateway>`
 

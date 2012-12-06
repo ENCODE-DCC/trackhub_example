@@ -26,12 +26,38 @@ superTrack on
     parent supertrack
 
 #Example Composite Track
+track composite
+compositeTrack on
+shortLabel Example Composite
+longLabel Example of a Composite Track
+
+    track bigBed1
+    bigDataUrl data/bigBed/example_1_bed_3.bigBed
+    shortLabel Example bigBed 1
+    longLabel Example 1 of a random bigBed file in bed 3 format
+    type bigBed 3
+    parent composite
+
+    track bigBed2
+    bigDataUrl data/bigBed/example_2_bed_3.bigBed
+    shortLabel Example bigBed 2
+    longLabel Example 2 of a random bigBed file in bed 3 format
+    type bigBed 3
+    parent composite
+
+    track bigBed3
+    bigDataUrl data/bigBed/example_3_bed_3.bigBed
+    shortLabel Example bigBed 3
+    longLabel Example 3 of a random bigBed file in bed 3 format
+    type bigBed 3
+    parent composite
+
 
 #Example Aggregate Track
 track aggregate
 container multiWig
-shortLabel Example aggregate
-longLabel Example of an aggregate track
+shortLabel Example Aggregate
+longLabel Example of an Aggregate Track
 aggregate transparentOverlay
 showSubtrackColorOnUi on
 type bigWig -100 100
