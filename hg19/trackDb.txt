@@ -43,11 +43,11 @@ subGroup2 variableletters Variable_Letters variableA=Variable_A variableB=Variab
 sortOrder view=+
 type bigBed 3
 
-
     track viewbigBed
     type bigBed 3
     shortLabel View bigBed
     longLabel View bigBed
+    view viewbigBed
 
         track bigBed1
         bigDataUrl data/bigBed/example_1_bed_3.bigBed
@@ -79,6 +79,7 @@ type bigBed 3
     shortLabel View bigWig
     longLavel View bigWig
     viewLimits -100:100
+    view viewbigWig
 
         track bigWig1000
         bigDataUrl data/bigWig/sine-1000.bedgraph.bigWig
