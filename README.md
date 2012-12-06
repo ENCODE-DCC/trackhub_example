@@ -1,7 +1,7 @@
 Advanced Composite Track Hub Example
 ========================
 
-Advanced examples of Composite Track making use of advanced grouping types subtracks and views to vizualize data in the UCSC Genome Browser using Track Hubs
+Advanced examples of Composite Tracks making use of the advanced grouping types subtracks and views to vizualize data in the UCSC Genome Browser using Track Hubs
 
 Advanced Grouping Types Featured:
 - SubGroups
