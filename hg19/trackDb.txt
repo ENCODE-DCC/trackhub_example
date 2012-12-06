@@ -30,6 +30,7 @@ track composite
 compositeTrack on
 shortLabel Example Composite
 longLabel Example of a Composite Track
+type bigBed 3
 
     track bigBed1
     bigDataUrl data/bigBed/example_1_bed_3.bigBed
