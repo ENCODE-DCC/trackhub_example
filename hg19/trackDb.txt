@@ -77,7 +77,7 @@ type bigBed 3
     track viewbigWig
     type bigWig -100 100
     shortLabel View bigWig
-    longLavel View bigWig
+    longLabel View bigWig
     viewLimits -100:100
     view viewbigWig
     parent views
